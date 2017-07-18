@@ -1,0 +1,1 @@
+This module uses semantic release to automate the publication of new changes. To allow this to happen, your commit message should follow the angular.js conventions. Put simply, prefix your commit message with feat:, fix:, or chore: depending on the nature of the change e.g. feat: add support for magic.js, fix: correct typo in error message, chore: fix update README.

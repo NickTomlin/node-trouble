@@ -1,6 +1,10 @@
 {
   "name": "@nicktomlin/trouble",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickTomlin/node-trouble.git"
+  },
   "description": "Simple CLI to grab information helpful in diagnosing issues with open source repositories",
   "main": "index.js",
   "scripts": {
