@@ -1,18 +1,26 @@
 {
-  "name": "@nicktomlin/issue",
+  "name": "@nicktomlin/trouble",
   "version": "1.0.0",
   "description": "Simple CLI to grab information helpful in diagnosing issues with open source repositories",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && flow"
   },
   "keywords": [],
   "author": "",
+  "bin": {
+    "trouble": "index.js"
+  },
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.0.1",
     "clipboardy": "^1.1.4",
     "global-npm": "^0.3.0",
     "minimist": "^1.2.0",
-    "os-name": "^2.0.1"
+    "os-name": "^2.0.1",
+    "pkginfo": "^0.4.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
   }
 }
