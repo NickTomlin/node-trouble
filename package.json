@@ -1,6 +1,6 @@
 {
   "name": "@nicktomlin/trouble",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "repository": {
     "type": "git",
     "url": "https://github.com/NickTomlin/node-trouble.git"
@@ -8,7 +8,8 @@
   "description": "Simple CLI to grab information helpful in diagnosing issues with open source repositories",
   "main": "index.js",
   "scripts": {
-    "test": "standard && flow"
+    "test": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "pkginfo": "^0.4.0"
   },
   "devDependencies": {
-    "standard": "^10.0.2"
+    "standard": "^10.0.2",
+    "semantic-release": "^6.3.6"
   }
 }
