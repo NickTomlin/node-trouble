@@ -7,6 +7,7 @@
   },
   "description": "Simple CLI to grab information helpful in diagnosing issues with open source repositories",
   "main": "index.js",
+  "files": ["index.js"],
   "scripts": {
     "test": "standard",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
