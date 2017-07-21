@@ -1,32 +1,7 @@
 trouble
 ===
 
-Collect useful troubleshooting details with a single command
-
-Installation and usage
----
-
-On modern versions of NPM, use `npx` to download and run directly: `npx @nicktomlin/trouble <args>`
-
-OR `npm i -g @nicktomlin/trouble` and `trouble <args>`
-
-```shell
-$ trouble
-trouble - collect information for troubleshooting issues with open source node packages
-
-Usage:
-    trouble [<dependency-names>]
-
-    $ trouble clipboardy global-npm package-that-does-not-exist
-
-Options:
-    -h | help print this help text
-```
-
-Use Case
----
-
-For your open source projects, you could add the following to your Github Issue template, replacing `my-module` with the name of your npm module:
+Allow users to easily collect troubleshooting from your [github issue templates](https://github.com/NickTomlin/protractor-flake/blob/master/.github/ISSUE_TEMPLATE#L12) and anywhere else open source is done:
 
 ```bash
 # get system information and version information for `my-module`
@@ -39,6 +14,23 @@ The following information has been copied to your clipboard:
 **Operating System**: macOS Sierra
 
 my-module@1.2.3
+```
+
+Modern versions of NPM can use `npx` to download and run directly: `npx @nicktomlin/trouble <args>`
+
+Older versions of npm will need to install and run `npm i -g @nicktomlin/trouble` and `trouble <args>`
+
+```shell
+$ trouble
+trouble - collect information for troubleshooting issues with open source node packages
+
+Usage:
+    trouble [<dependency-names>]
+
+    $ trouble clipboardy global-npm package-that-does-not-exist
+
+Options:
+    -h | help print this help text
 ```
 
 Requirements
