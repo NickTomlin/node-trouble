@@ -23,6 +23,24 @@ Options:
     -h | help print this help text
 ```
 
+Use Case
+---
+
+For your open source projects, you could add the following to your Github Issue template, replacing `my-module` with the name of your npm module:
+
+```bash
+# get system information and version information for `my-module`
+$ npx @nicktomlin/trouble my-module
+npx: installed 32 in 5.778s
+
+The following information has been copied to your clipboard:
+
+**Node Version** v8.1.4 (NPM: 5.3.0)
+**Operating System**: macOS Sierra
+
+my-module@1.2.3
+```
+
 Requirements
 ---
 
